@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import Jumbotron from "../Jumbotron";
+import Table from "./Table/Table";
 
 const Home = () => {
   const [modules, setModules] = useState({
@@ -34,6 +35,7 @@ const Home = () => {
   return (
     <div>
       <Jumbotron />
+      <Table />
     </div>
   );
 };
