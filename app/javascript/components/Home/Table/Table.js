@@ -1,9 +1,16 @@
 import React from "react";
 import Item from "./Item";
+import ActiveItem from "./ActiveItem";
 
 const Table = (props) => {
   const items = props.modules.modules.map((data) => {
-    return (
+    return data.active ? (
+      <ActiveItem
+        key={data.id}
+        title={data.title}
+        description={data.description}
+      />
+    ) : (
       <Item key={data.id} title={data.title} description={data.description} />
     );
   });

@@ -16,7 +16,7 @@ const Home = () => {
         id: 2,
         title: "2. Adding React to an Existing Rails App.",
         description: "lorem ipsum",
-        active: false,
+        active: true,
       },
       {
         id: 3,
