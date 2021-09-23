@@ -35,7 +35,7 @@ const Home = () => {
   return (
     <div>
       <Jumbotron />
-      <Table />
+      <Table modules={modules} />
     </div>
   );
 };
